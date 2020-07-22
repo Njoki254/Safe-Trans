@@ -1,13 +1,63 @@
 html,
-body * {
+ * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif
+    font-family: 'Open Sans', sans-serif;
+    margin:0
 }
 
 body {
     background: linear-gradient(rgba(245, 245, 245, 0.3), rgba(245, 245, 245, 0.3)), url(https://geoscapeglobal.co.ke/wp-content/uploads/2019/08/IMG-20190826-WA0009.jpg) no-repeat center center fixed;
-    background-size: cover
-
+    background-size: cover;
+    margin: 0;
+}
+.container{
+max-width:11400px;
+background-color:blue;
+margin:auto;}
+.row{
+display:flex;
+flex-wrap:wrap;
+}
+header .row{
+justify-content:space-betweem;
+}
+header .brand-name{
+background-color:blue;
+font-size:22px;
+font-weight:600;
+color: #ffffff;
+}
+header .navbar{
+background-color:red;
+}
+header .navbar ul{
+List-Style:none;
+padding:0;
+margin:0;
+}
+header .navbar ul li{
+display:inline-bloc;
+margin-left:35px;
+}
+header .navbar ul li a::before{
+content: "";
+height: 3px;
+background-color: #ffffff;
+width:0%;
+position: absolute;
+right:0px;}
+header{
+background-color: blue;
+position:absolute;
+left:0px;
+right:0px;
+border-bottom: 1px solid;
+}
+.home{
+min-height: 100vh;
+background-image:url("https://www.ahisummit.com/wp-content/uploads/2019/05/conversation-1.jpg");
+background-size:cover;
+background-position:center;
 }
 h3{
 text-align:center;
